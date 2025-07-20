@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.score {
+    display: flex;
+    justify-content: space-around;
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.choice {
+    text-align: center;
+}
+
+.choice h3 {
+    margin: 0 0 10px 0;
+    color: #666;
+}
+
+.choice div {
+    font-size: 60px;
+    background: #f9f9f9;
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #ddd;
+}
+
+#result {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 10px;
+    background: #e8f4fd;
+    color: #333;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.buttons button {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.buttons button:hover {
+    background: #5a6fd8;
+    transform: translateY(-2px);
+}
+
+.reset {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.reset:hover {
+    background: #ff5252;
+}
+
+.win {
+    background: #d4edda !important;
+    color: #155724 !important;
+}
+
+.lose {
+    background: #f8d7da !important;
+    color: #721c24 !important;
+}
+
+.draw {
+    background: #fff3cd !important;
+    color: #856404 !important;
+}
+
+@media (max-width: 600px) {
+    .choices {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .buttons button {
+        width: 200px;
+    }
+}
